@@ -6,25 +6,21 @@
   <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import { defineComponent } from 'vue'
 
-nav {
-  padding: 30px;
+export default defineComponent({
+  setup() {
+    const API_Key = '570b428919d34c2abce2c95a949390fd';
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+    return {
+      API_Key
     }
-  }
-}
+  },
+})
+</script>
+
+
+<style lang="scss">
+@import './styles/index.scss';
 </style>

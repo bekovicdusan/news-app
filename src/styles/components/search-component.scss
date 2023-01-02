@@ -1,0 +1,36 @@
+.search-component {
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  .input-search {
+    flex-basis: 840px;
+    position: relative;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    display: flex;
+    .icon {
+      position: absolute;
+      left: $spacing-s;
+      top: 9px;
+      color: $primary;
+    }
+    input {
+      padding: $spacing-s $spacing-xxl;
+      border: none;
+      border-radius: 10px;
+      color: $primary-text;
+      width: unset;
+      flex-basis: 840px;
+      &:focus,
+      &:active {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  button {
+    margin-left: $spacing-s;
+    flex-basis: 80px;
+  }
+}

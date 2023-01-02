@@ -1,0 +1,13 @@
+.primary-btn,
+.secondary-btn,
+.tertiary-btn {
+  outline: none;
+  border-radius: 10px;
+  padding: $spacing-s;
+}
+
+.primary-btn {
+  background-color: $primary;
+  border: none;
+  color: $bg;
+}
