@@ -3,10 +3,11 @@
 @import './variables/spacing.scss';
 
 // views
-
+@import './views/home.scss';
 
 //components
 @import './components/search-component.scss';
+@import './components/the-article.scss';
 
 // misc 
 @import './misc/buttons.scss';

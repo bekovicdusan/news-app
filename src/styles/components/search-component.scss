@@ -1,8 +1,9 @@
 .search-component {
-  max-width: 1080px;
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: $spacing-xxl auto;
+  margin-top: 0;
   .input-search {
     flex-basis: 840px;
     position: relative;

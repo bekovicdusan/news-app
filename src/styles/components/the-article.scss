@@ -1,0 +1,28 @@
+.article {
+  margin: $spacing-grid auto;
+  max-width: 640px;
+  padding: $spacing-s $spacing-l;
+  border-radius: 10px;
+  color: $primary-text;
+  background-color: $accent;
+  .headline {
+    text-align: left;
+    color: $primary-text;
+    text-decoration: none;
+    &:visited,
+    &:focus,
+    &:active {
+      color: $primary-text;
+    }
+  }
+  .content {
+    text-align: justify;
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    .timestamp {
+    }
+  }
+}

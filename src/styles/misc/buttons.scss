@@ -9,5 +9,9 @@
 .primary-btn {
   background-color: $primary;
   border: none;
-  color: $bg;
+  color: $white;
+  cursor: pointer;
+  &:active {
+    box-shadow: inset 0px 0px 2px 4px $primary-text;
+  }
 }
