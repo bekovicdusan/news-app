@@ -5,6 +5,7 @@
         {{ article.title }}
       </h3>
     </a>
+    <img class="image" :src="article.urlToImage?.toString()"/>
     <p class="content">
       {{ article.content?.split('[')[0] }}
     </p>
