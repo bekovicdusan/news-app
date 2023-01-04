@@ -1,10 +1,11 @@
 .article {
-  margin: $spacing-grid auto;
+  margin: $spacing-l auto;
   max-width: 640px;
   padding: $spacing-s $spacing-l;
   border-radius: 10px;
   color: $primary-text;
   background-color: $accent;
+  box-shadow: 1px 1px 5px 1px $primary-text;
   .headline {
     text-align: left;
     color: $primary-text;
@@ -14,6 +15,16 @@
     &:active {
       color: $primary-text;
     }
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid $primary;
+  }
+  .author {
+    display: block;
+    text-align: left;
+    margin-bottom: $spacing-s;
+    font-size: 14px;
   }
   .image {
     width: 100%;
@@ -25,7 +36,5 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    .timestamp {
-    }
   }
 }
