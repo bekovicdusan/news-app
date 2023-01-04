@@ -1,15 +1,16 @@
 .search-component {
-  max-width: 960px;
+  max-width: 680px;
   display: flex;
   justify-content: space-between;
   margin: $spacing-xxl auto;
   margin-top: 0;
   .input-search {
-    flex-basis: 840px;
     position: relative;
     border: 1px solid $primary;
     border-radius: 10px;
     display: flex;
+    margin-right: $spacing-s;
+    min-width: 300px;
     .icon {
       position: absolute;
       left: $spacing-s;
@@ -21,8 +22,7 @@
       border: none;
       border-radius: 10px;
       color: $primary-text;
-      width: unset;
-      flex-basis: 840px;
+      width: 100%;
       &:focus,
       &:active {
         border: none;
@@ -30,8 +30,26 @@
       }
     }
   }
-  button {
-    margin-left: $spacing-s;
-    flex-basis: 80px;
+  .country, 
+  .category {
+    margin-right: $spacing-s;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .search-component {
+    flex-direction: column;
+    .input-search {
+      margin-bottom: $spacing-s;
+      margin-right: 0;
+    }
+    .country {
+      margin: $spacing-s 0;
+    }
+    .category,
+    .country {
+      margin-right: 0;
+      padding: $spacing-s;
+    }
   }
 }

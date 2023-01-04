@@ -1,9 +1,10 @@
+//here i did not need other variants of the button style, but if I had this is how it would be handled
 .primary-btn,
 .secondary-btn,
 .tertiary-btn {
   outline: none;
   border-radius: 10px;
-  padding: $spacing-s;
+  padding: $spacing-s $spacing-l;
 }
 
 .primary-btn {
